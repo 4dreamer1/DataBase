@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: personnel-equipment-management-system
+  datasource:
+    url: jdbc:mysql://localhost:3306/equipment_db?useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: root
+    password: ${DB_PASSWORD:Qian15825254201}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        jdbc:
+          batch_size: 30
+        order_inserts: true
+        order_updates: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8081
+  address: 0.0.0.0
+
+jwt:
+  secret: equipmentManagementSecretKey123456789012345678901234567890
+  expiration: 86400000
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    dev.usr.database: DEBUG
+
+app:
+  upload:
+    dir: uploads/avatars
+
+ai:
+  config:
+    api-key: ${AI_API_KEY:sk-iLfvtYIaWqIwfpilIEQ1iCtc43C3z4GMTAJwnQXfn1Hp3r6r}
+    api-url: https://api.moonshot.cn/v1/chat/completions
+    model: moonshot-v1-8k
+    temperature: 0.7
+    max-tokens: 2000
+    system-message: 您好！我是AI助手，我可以帮您解答关于人员装备管理系统的问题，也可以回答其他方面的问题。

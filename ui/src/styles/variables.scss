@@ -1,0 +1,44 @@
+/* 主题变量 - 现代化配色方案 */
+$--color-primary: #4361ee;
+$--color-primary-light: #4895ef;
+$--color-primary-dark: #3a0ca3;
+$--color-secondary: #7209b7;
+$--color-success: #4cc9f0;
+$--color-warning: #f8961e;
+$--color-danger: #f94144;
+$--color-info: #90b4ce;
+
+/* 文字颜色 */
+$--color-text-primary: #293241;
+$--color-text-regular: #3d5a80;
+$--color-text-secondary: #607d8b;
+$--color-text-placeholder: #98c1d9;
+
+/* 边框颜色 */
+$--border-color-base: #e0e0e0;
+$--border-color-light: #e9ecef;
+$--border-color-lighter: #f0f4f8;
+$--border-color-extra-light: #f8f9fa;
+
+/* 背景颜色 */
+$--background-color-base: #f7f9fc;
+
+/* 布局 */
+$--header-height: 64px;
+$--sidebar-width: 250px;
+$--sidebar-collapse-width: 64px;
+
+/* 阴影 */
+$--box-shadow-base: 0 3px 6px rgba(0, 0, 0, 0.08);
+$--box-shadow-dark: 0 8px 16px rgba(0, 0, 0, 0.12);
+$--box-shadow-light: 0 4px 12px rgba(67, 97, 238, 0.1);
+
+/* 圆角 */
+$--border-radius-small: 4px;
+$--border-radius-base: 8px;
+$--border-radius-large: 12px;
+$--border-radius-circle: 50%;
+
+/* 动画过渡 */
+$--transition-duration: 0.3s;
+$--transition-all: all $--transition-duration ease;
